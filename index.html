@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#electronics">Electronics</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#clothing">Clothing</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Our E-Commerce Store</h1>
+
+        <section id="electronics" class="product-category">
+            <h2>Electronics</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://media.ldlc.com/ld/products/00/05/88/62/LD0005886202_1.jpg" alt="Smartphone">
+                    <h3>Smartphone</h3>
+                    <p>Price: $699</p>
+                    <button onclick="addToCart('Smartphone', 699)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://medias.audiofanzine.com/images/normal/apple-macbook-pro-15-touchbar-2017-1846209.jpg" alt="Laptop">
+                    <h3>Laptop</h3>
+                    <p>Price: $999</p>
+                    <button onclick="addToCart('Laptop', 999)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="accessories" class="product-category">
+            <h2>Accessories</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://th.bing.com/th/id/OIP.9rv1g1o8ogZaeDCHhx_KgQAAAA?w=143&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Headphones">
+                    <h3>Headphones</h3>
+                    <p>Price: $199</p>
+                    <button onclick="addToCart('Headphones', 199)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://th.bing.com/th/id/OIP._VDWi4DvrVMLc3IWkK9xYAHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p>Price: $299</p>
+                    <button onclick="addToCart('Smartwatch', 299)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="clothing" class="product-category">
+            <h2>Clothing</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd0%2F28%2Fd02802a9fe1048bd04ea15f92923477fcfcbf784.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url[file:/product/main]" alt="T-Shirt">
+                    <h3>T-Shirt</h3>
+                    <p>Price: $29</p>
+                    <button onclick="addToCart('T-Shirt', 29)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://th.bing.com/th/id/OIP.nZyZoK4OAkFCx1ChvHYDMAHaHa?w=208&h=208&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Jacket">
+                    <h3>Jacket</h3>
+                    <p>Price: $99</p>
+                    <button onclick="addToCart('Jacket', 99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
